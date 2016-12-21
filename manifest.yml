@@ -1,0 +1,13 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: KalertAPP
+  host: KalertAPP
+  disk_quota: 1024M
+  services:
+  - KalertAPP-AdvancedMobileAccess
+  - KalertAPP-imfpush
+  - KalertAPP-cloudantNoSQLDB
+  - availability-monitoring-auto
